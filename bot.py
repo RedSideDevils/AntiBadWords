@@ -1,5 +1,6 @@
 import discord 
 from discord.ext import commands
+import os
 
 PREFIX = '.'
 
@@ -30,4 +31,4 @@ async def on_message(message):
         pass
 
 
-client.run("NzY3NDg0NjI5ODgzMjg5NjEx.X4ylwg.sc4GUKXt2Onzn1L1-jK_uEnY8Rw")
+client.run(os.environ['token'])
